@@ -21,4 +21,9 @@ test "should get about" do
     assert_response :success
     assert_select "title", "About | getFit"
   end
+  test "should get contact" do
+      get :contact
+      assert_response :success
+      assert_select "title", "Contact | getFit"
+    end
 end
